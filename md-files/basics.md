@@ -134,7 +134,7 @@ hist(y)
 * Line chart
 
 > Sample allows creating samples of given events and its probabilities
-``r
+```r
 # Get a sample, parecido a una tomobola
 # Valores, cuantas veces repetira el experimento, con remplazo, y
 # Probabilidad de cada evento.
@@ -147,4 +147,4 @@ library('ggplot2')
 # Color colors just border, fill, colors the entire thing
 qplot(s,geom='bar',main='line chart', xlab='muestras',
 ylab='pruebas',color='red',fill=I('green'))
-``
+```
