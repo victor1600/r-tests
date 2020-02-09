@@ -115,7 +115,7 @@ sequence(x)
 expand.grid(a<-("poly,kiwi"),b<-c("gonzalez","arevalo"),tiempo<-5))
 ```
 
-## Graficos
+## Graphics and Creating Samples
 Usados para variables continuas. Probabilidad acumulada.
 
 * Histograms
@@ -139,7 +139,7 @@ hist(y)
 # Valores, cuantas veces repetira el experimento, con remplazo, y
 # Probabilidad de cada evento.
 s <- sample(x=c(1,2,3,4), size=1000,replace=TRUE,prob =c(0.4,2.0,3.0,1))
-s
+
 # GET a LINE CHART
 
 library('ggplot2')
