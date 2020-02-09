@@ -94,4 +94,57 @@ seq(1,5,0.5)
 
 # Third way
 seq(length=10,from=2, to=15)
+
+# repeats number n times
+# Will repeat 30 times number 1
+x = rep(1,30)
+
+#  create a sequence, withing given range, aumenting 1
+sequence(1:4)
+
+x = c(5,6,7,8)
+sequence(x)
+
+
 ```
+
+## Combinations
+
+```r
+# Expand grid, obtener todas las combinaciones posibles
+expand.grid(a<-("poly,kiwi"),b<-c("gonzalez","arevalo"),tiempo<-5))
+```
+
+## Graficos
+Usados para variables continuas. Probabilidad acumulada.
+
+* Histograms
+```r
+# CREATING HISTOGRAMS
+x = rnorm(3000)
+x
+
+hist(rnorm(10000))
+
+# POISSON DIST
+y <-rpois(3000,4)
+hist(y)
+```
+
+* Line chart
+
+> Sample allows creating samples of given events and its probabilities
+``r
+# Get a sample, parecido a una tomobola
+# Valores, cuantas veces repetira el experimento, con remplazo, y
+# Probabilidad de cada evento.
+s <- sample(x=c(1,2,3,4), size=1000,replace=TRUE,prob =c(0.4,2.0,3.0,1))
+s
+# GET a LINE CHART
+
+library('ggplot2')
+# Geometria
+# Color colors just border, fill, colors the entire thing
+qplot(s,geom='bar',main='line chart', xlab='muestras',
+ylab='pruebas',color='red',fill=I('green'))
+``
