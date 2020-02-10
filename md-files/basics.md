@@ -155,7 +155,18 @@ ylab='pruebas',color='red',fill=I('green'))
 
 ex1:
 ```r
-matrix(1:6,nrow = 2,ncol = 3)
+> matrix(1:6,nrow = 2,ncol = 3)
+     [,1] [,2] [,3]
+[1,]    1    3    5
+[2,]    2    4    6
+```
+
+ex2:
+```r
+> matrix(c(4,7,8,9,6,1),nrow = 2,ncol = 3)
+     [,1] [,2] [,3]
+[1,]    4    8    6
+[2,]    7    9    1
 ```
 
 2. Creating a serie and reshaping it:
@@ -192,3 +203,14 @@ Useful to get text and numebrs in same matrix.
 
 This is useful when we import data and want R to understand
 the data is ordered by date.
+
+* Frequency = 12, is monthly.
+* Start in year 1995 in month 3
+
+```r
+> x <- ts(data=1:20, frequency = 12,start = c(1995,3))
+> x
+     Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec
+1995           1   2   3   4   5   6   7   8   9  10
+1996  11  12  13  14  15  16  17  18  19  20        
+```

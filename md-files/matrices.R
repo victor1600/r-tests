@@ -13,6 +13,8 @@ matrix(1:6,2,3,TRUE)
 
 # 2
 
+
+
 # Create a serie
 # Give that serie a shape.
 x<-1:16
