@@ -148,3 +148,47 @@ library('ggplot2')
 qplot(s,geom='bar',main='line chart', xlab='muestras',
 ylab='pruebas',color='red',fill=I('green'))
 ```
+
+## Matrixes
+
+1. Creating a matrix using a serie, and nrow and ncolums
+
+ex1:
+```r
+matrix(1:6,nrow = 2,ncol = 3)
+```
+
+2. Creating a serie and reshaping it:
+
+```r
+> x<-1:16
+> x
+ [1]  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16
+> dim(x)<-c(4,4)
+> x
+     [,1] [,2] [,3] [,4]
+[1,]    1    5    9   13
+[2,]    2    6   10   14
+[3,]    3    7   11   15
+[4,]    4    8   12   16
+
+```
+
+## Data.Frames
+
+Useful to get text and numebrs in same matrix.
+
+```r
+> x<-1:4; q<-2:5; names1<-c("poly","kiwi","chicky","lily")
+> data.frame(x,q,names1)
+  x q names1
+1 1 2   poly
+2 2 3   kiwi
+3 3 4 chicky
+4 4 5   lily
+```
+
+## Time Series
+
+This is useful when we import data and want R to understand
+the data is ordered by date.
